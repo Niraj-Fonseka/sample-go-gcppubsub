@@ -9,6 +9,7 @@ spec:
   triggers:
   - type: gcp-pubsub
     metadata:
-      subscriptionSize: "5"
+      mode: "SubscriptionSize"
+      value: "5"
       subscriptionName: "mysubscription" # Required 
       credentialsFromEnv: GOOGLE_APPLICATION_CREDENTIALS_JSON # Required
